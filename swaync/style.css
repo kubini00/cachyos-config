@@ -1,0 +1,100 @@
+@import url("/home/kubini/.cache/wal/gtk-colors.css");
+@import url("./notifications.css");
+
+.control-center {
+  margin: 24px;
+  background: @background;
+  border-radius: 14px;
+  background-clip: border-box;
+  padding: 4px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.7),
+			  0 2px 6px 2px rgba(0, 0, 0, 0.3);
+  color: @foreground;
+  border: 2px solid @color10;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+/* Window behind control center and on all other monitors */
+.blank-window {
+  background: transparent;
+}
+
+.top-action-title {
+  color: @foreground;
+  text-shadow: none;
+}
+
+.control-center-clear-all {
+  color: @foreground;
+  text-shadow: none;
+  background: @background;
+  border: 2px solid @color10;
+  box-shadow: none;
+  border-radius: 8px;
+}
+.control-center-dnd {
+  border-radius: 8px;
+  background: @background;
+  border: 1px solid @color10;
+  box-shadow: none;
+}
+
+.control-center-dnd:checked {
+  background: @color10;
+}
+
+.control-center-dnd slider {
+  background: @background;
+  border-radius: 8px;
+}
+
+
+/* Title widget */
+.widget-title {
+  margin: 8px;
+  font-size: 1.5rem;
+}
+.widget-title > button {
+  font-size: initial;
+  color: @foreground;
+  text-shadow: none;
+  background: @background;
+  border: 2px solid @color10;
+  box-shadow: none;
+  border-radius: 8px;
+}
+.widget-title > button:hover {
+  background: @background;
+}
+
+/* DND widget */
+.widget-dnd {
+  margin: 8px;
+  font-size: 1.1rem;
+}
+.widget-dnd > switch {
+  font-size: initial;
+  border-radius: 8px;
+  background: @background;
+  border: 2px solid @color10;
+  box-shadow: none;
+}
+.widget-dnd > switch:checked {
+  background: @color10;
+}
+.widget-dnd > switch slider {
+  background: @foreground;
+  border-radius: 10px;
+  border: 0;
+}
+
+/* Label widget */
+.widget-label {
+  margin: 8px;
+}
+.widget-label > label {
+  font-size: 1.1rem;
+}
