@@ -1,3 +1,5 @@
-do dotsow odrazu ig
-waynbar do mango
-reszta sie zrobi ig
+Do dotsow odrazu ig
+
+icons-.icons do ../.icons
+
+Reszta sie zrobi ig :3
