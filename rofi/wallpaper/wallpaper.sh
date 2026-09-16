@@ -34,7 +34,9 @@ done | $rofi_command
 
 [[ -n "$wall_selection" ]] || exit 1
 
-sh huj.sh "${walldir}/${wall_selection}"
+x="${walldir}/${wall_selection}"
+wal --backend wal -i $x -q -n --cols16 --saturate 0.35
+awww img $x
 mmsg dispatch reload_config
 swaync-client -rs
 
