@@ -14,10 +14,8 @@ configuration {
 
 /*****----- Global Properties -----*****/
 @import "~/.cache/wal/colors-rofi.rasi"
+@import "../font-config.rasi"
 
-* {
-    font: "Roboto Mono Nerd Font 11";
-}
 /*
 USE_BUTTONS=YES
 */

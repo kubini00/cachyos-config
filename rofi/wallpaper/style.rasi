@@ -14,12 +14,10 @@ configuration {
     display-drun:               " Applications";
 	drun-display-format:        "{name}";
 }
+
 /*****----- Global Properties -----*****/
 @import "~/.cache/wal/colors-rofi.rasi"
-
-* {
-    font: "Roboto Mono Nerd Font 11";
-}
+@import "../font-config.rasi"
 
 /*****----- Main Window -----*****/
 window {
