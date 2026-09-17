@@ -2,7 +2,6 @@ function fish_greeting
     fastfetch
 end
 
-alias huj='sh ~/huj.sh'
 alias clock='tty-clock -c C 1'
 alias fu='flatpak update'
 alias update='yay -S'
