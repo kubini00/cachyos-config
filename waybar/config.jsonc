@@ -103,7 +103,7 @@
   "custom/power": {
     "format": "",
     "tooltip": false,
-    "on-click": "sh ~/.config/rofi/powermenu/type-2/powermenu.sh"
+    "on-click": "sh ~/.config/rofi/power/powermenu.sh"
     // "on-click-right": "bash ~/.config/eww/System-Menu/launch"
   },
   "pulseaudio#microphone": {
