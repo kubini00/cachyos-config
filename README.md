@@ -1,6 +1,6 @@
 ## Instalki pl
-```
-yay -S wayland wayland-protocols libinput libdrm libxkbcommon pixman libdisplay-info libliftoff hwdata seatd pcre2 pango cjson pixman xorg-xwayland libxcb pipewire pipewire-pulse xdg-desktop-portal-wlr wlr-randr mangowm vesktop firefox code rofi waybar swaync thunar pear-desktop openrgb obs-studio btop cava fastfetch pywal awww grim slurp wl-clipboard pavucontrol pipewire-pulse xfce-polkit sox pywal16 mangobar-git wayfreeze kitty tty-clock tumbler ttf-jetbrains-mono-nerd
+```Requiered
+yay -S wayland wayland-protocols libinput libdrm libxkbcommon pixman libdisplay-info libliftoff hwdata seatd pcre2 pango cjson pixman xorg-xwayland libxcb pipewire pipewire-pulse xfce-polkit xdg-desktop-portal-wlr wlr-randr mangowm rofi waybar swaync pywal16 awww grim slurp wl-clipboard wayfreeze pavucontrol sox mangobar-git kitty ttf-jetbrains-mono-nerd fastfetch
 ```
 
 Do dotsow odrazu ig
