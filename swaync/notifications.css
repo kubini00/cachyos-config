@@ -1,7 +1,9 @@
 /* .floating-notifications > scrolledwindow > viewport > box { */
 /*   margin-top: 50px; */
 /* } */
-
+*{
+  font-family: 'JetBrainsMono Nerd Font';
+}
 /* applies only to floating block, not the notifications in control center */
 .floating-notifications .notification-row {
   padding: 0;
