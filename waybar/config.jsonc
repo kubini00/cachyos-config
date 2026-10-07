@@ -14,7 +14,6 @@
   "modules-center": [
     "custom/playerctl",
     "clock"
-    // "custom/cava",
   ],
   "modules-right": [
     "tray",
@@ -96,7 +95,6 @@
     "format": "",
     "tooltip": false,
     "on-click": "sh ~/.config/rofi/power/powermenu.sh"
-    // "on-click-right": "bash ~/.config/eww/System-Menu/launch"
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
