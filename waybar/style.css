@@ -34,9 +34,8 @@ tooltip {
 #custom-cava,
 #custom-playerctl,
 #custom-power {
-  padding: 0px 10px;
   margin: 0px;
-  margin-top: 6px;
+  margin-top: 2px;
   margin-bottom: 0px;
   border-radius: 14px;
   border-width: 2px;
@@ -46,7 +45,7 @@ tooltip {
 }
 
 #workspaces {
-  margin-left: 10px;
+  margin-left: 2px;
   padding-left: 18px;
   padding-right: 8px;
   padding-top: 0;
@@ -135,7 +134,7 @@ tooltip {
 }
 
 #custom-power {
-  margin-right: 10px;
+  margin-right: 2px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 3px;
