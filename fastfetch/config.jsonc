@@ -38,34 +38,40 @@
             "key": "│ {#35} kernel  {#keys}│",
             "type": "kernel"
         },
+
         {
-            "key": "│ {#36}󰇄 desktop {#keys}│",
+            "key": "│ {#36} packg   {#keys}│",
+            "type": "packages"
+        },
+
+        {
+            "key": "│ {#31}󰇄 desktop {#keys}│",
             "type": "wm"
         },
         {
-            "key": "│ {#31} term    {#keys}│",
+            "key": "│ {#32} term    {#keys}│",
             "type": "terminal"
         },
         {
-            "key": "│ {#32} shell   {#keys}│",
+            "key": "│ {#33} shell   {#keys}│",
             "type": "shell"
         },
         {
-            "key": "│ {#33}󰍛 cpu     {#keys}│",
+            "key": "│ {#34}󰍛 cpu     {#keys}│",
             "type": "cpu",
             "showPeCoreCount": false
         },
         {
-            "key": "│ {#33}{icon} gpu     {#keys}│",
+            "key": "│ {#35}{icon} gpu     {#keys}│",
             "type": "gpu",
             "format": "{vendor} {name}"
         },
         {
-            "key": "│ {#34} memory  {#keys}│",
+            "key": "│ {#36} memory  {#keys}│",
             "type": "memory"
         },
         {
-            "key": "│ {#35}󰉉 disk    {#keys}│",
+            "key": "│ {#31}󰉉 disk    {#keys}│",
             "type": "disk",
             "folders": "/"
         },
