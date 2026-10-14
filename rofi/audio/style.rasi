@@ -1,0 +1,112 @@
+
+configuration {
+    modi: "dmenu";
+    show-icons: false;
+    cycle: true;
+}
+
+@import "~/.cache/wal/colors-rofi.rasi"
+@import "~/.config/rofi/font-config.rasi"
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    width: 480px;
+    margin: 0px;
+    padding: 0px;
+    border: 2px;
+    border-radius: 12px;
+    border-color: @selected;
+    background-color: @background;
+}
+
+mainbox {
+    spacing: 10px;
+    margin: 0px;
+    padding: 18px;
+    background-color: transparent;
+    children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+    spacing: 10px;
+    margin: 0px;
+    padding: 14px;
+    border: 1px;
+    border-radius: 10px;
+    border-color: @selected;
+    background-color: @background-alt;
+    text-color: @foreground;
+    children: [ "prompt", "entry" ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @selected;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @foreground;
+    placeholder: "Wybierz wyjscie audio...";
+    placeholder-color: @foreground;
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    fixed-height: false;
+    fixed-columns: true;
+    spacing: 6px;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+element {
+    spacing: 10px;
+    margin: 0px;
+    padding: 12px;
+    border: 1px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: @background-alt;
+    text-color: @foreground;
+    cursor: pointer;
+}
+
+element normal.normal {
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color: @background;
+    border-color: @selected;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    highlight: inherit;
+    vertical-align: 0.5;
+}
+
+message {
+    padding: 10px;
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+
+textbox {
+    background-color: transparent;
+    text-color: @foreground;
+    vertical-align: 0.5;
+}
