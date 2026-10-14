@@ -14,6 +14,7 @@
   "modules-center": [
     "custom/playerctl",
     "clock"
+    // "custom/cava",
   ],
   "modules-right": [
     "tray",
@@ -81,7 +82,8 @@
     "on-click": "pamixer -t",
     "on-scroll-up": "pamixer -i 2",
     "on-scroll-down": "pamixer -d 2",
-    "on-click-right": "pavucontrol",
+    "on-click-middle": "pavucontrol",
+    "on-click-right": "~/.config/rofi/audio/audio-menu.sh",
     "scroll-step": 5,
     "format-icons": {
       "default": [
@@ -95,6 +97,7 @@
     "format": "",
     "tooltip": false,
     "on-click": "sh ~/.config/rofi/power/powermenu.sh"
+    // "on-click-right": "bash ~/.config/eww/System-Menu/launch"
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
