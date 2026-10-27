@@ -1,70 +1,43 @@
 {
   "layer": "top",
-  "spacing": 8, 
+  "spacing": 6,
   "position": "top",
   "exclusive": true,
   "passthrough": false,
   "gtk-layer-shell": true,
   "ipc": false,
   "reload_style_on_change": true,
-  "height": 38,
+  "height": 36,
   "modules-left": [
     "ext/workspaces"
   ],
   "modules-center": [
-    "custom/playerctl",
-    "clock"
-    // "custom/cava",
+    "custom/playerctl"
   ],
   "modules-right": [
     "tray",
     "pulseaudio#microphone",
     "pulseaudio",
-    "custom/notification",
-    "custom/power"
+    "clock",
+    "custom/multimenu"
   ],
-
-"ext/workspaces": {
+  "ext/workspaces": {
     "ignore-hidden": false,
     "on-click": "activate",
     "on-click-right": "deactivate"
   },
-
-  
-  "custom/notification": {
-    "tooltip": false,
-    "format": "{icon}",
-    "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
-      "none": "",
-      "dnd-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-none": "",
-      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-inhibited-none": ""
-    },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click": "sleep 0.1s && swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true
-  },
- 
   "tray": {
     "interval": 1,
     "icon-size": 20,
     "spacing": 12
   },
-  
   "clock": {
     "format": "{:%H:%M ~ %d/%m/%y}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "year",
       "weeks-pos": "right",
-      "mode-mon-col" : 3,
+      "mode-mon-col": 3,
       "on-scroll": 1,
       "format": {
         "months": "<span color='white'><b>{}</b></span>",
@@ -78,36 +51,36 @@
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "tooltip": false,
-    "format-muted": " Mute",
+    "format-muted": " {volume}%",
     "on-click": "pamixer -t",
     "on-scroll-up": "pamixer -i 2",
     "on-scroll-down": "pamixer -d 2",
     "on-click-middle": "pavucontrol",
     "on-click-right": "~/.config/rofi/audio/audio-menu.sh",
-    "scroll-step": 5,
+    "scroll-step": 0,
     "format-icons": {
       "default": [
-        "",
         "",
+        "",
         ""
       ]
     }
-  },
-  "custom/power": {
-    "format": "",
-    "tooltip": false,
-    "on-click": "sh ~/.config/rofi/power/powermenu.sh"
-    // "on-click-right": "bash ~/.config/eww/System-Menu/launch"
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
     "format-source": "",
     "tooltip": false,
+    "scroll-step": 0,
     "format-source-muted": "",
-    "on-click": "pamixer --default-source -t",
-    "scroll-step": 5
+    "on-click": "pamixer --default-source -t"
   },
-  
+  "custom/multimenu": {
+    "format": "󰣇",
+    "tooltip": false,
+    "on-click-right": "sleep 0.1s && swaync-client -t -sw",
+    "on-click-middle": "~/.config/rofi/launch/launcher.sh",
+    "on-click": "sh ~/.config/rofi/power/powermenu.sh"
+  },
   "custom/playerctl": {
     "format": "{2}<span>{0}</span>",
     "return-type": "json",
@@ -126,5 +99,4 @@
       "Playing": " "
     }
   }
-  
 }
