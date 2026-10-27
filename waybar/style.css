@@ -4,24 +4,34 @@
 * {
   border: none;
   font-weight: bold;
-  font-size: 14.5px;
+  font-size: 16px;
   font-family: JetBrainsMono Nerd Font ;
 }
 
 window#waybar {
   margin: 0px;
   padding: 0px;
-  background-color: transparent ;
+  background-color: transparent;
 }
 
 tooltip {
   border-radius: 12px;
-  padding: 21px;
-  opacity: 0.85;
+  padding: 12px;
   border: 2px solid @color10;
   color: @color10;
   background-color: @background;
-
+}
+menu{
+  background-color: @background;
+  color: @color10;
+  border: 2px solid @color10;
+}
+menuitem {
+	border-radius: 10px;
+}
+menuitem:hover {
+  background-color: @color10;
+  color: @background;
 }
 #workspaces,
 /* #tags, */
@@ -33,7 +43,7 @@ tooltip {
 #custom-notification,
 #custom-cava,
 #custom-playerctl,
-#custom-power {
+#custom-multimenu {
   margin: 0px;
   margin-top: 2px;
   margin-bottom: 0px;
@@ -45,7 +55,7 @@ tooltip {
 }
 
 #workspaces {
-  margin-left: 2px;
+  margin-left: 6px;
   padding-left: 18px;
   padding-right: 8px;
   padding-top: 0;
@@ -61,7 +71,7 @@ tooltip {
   background: none;
   box-shadow: none;
   text-shadow: none;
-  margin: 8px 0px;
+  margin: 7px 0px;
   margin-right: 10px;
   min-height: 0;
   padding: 0;
@@ -99,44 +109,36 @@ tooltip {
 }
 
 #custom-playerctl {
-  border-radius: 12px;
   padding: 0px 16px;
 }
 
-#custom-cava {
-  border-radius: 12px 0px 0px 12px;
-  margin-top: 6px;
-}
-
 #tray {
-  padding-right: 12px;
-  padding-left: 12px;
-  padding-top: 2px;
+  padding: 0px 12px;
+  padding-top: 1px;
+  margin-left: 6px;
 }
 
 #pulseaudio {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 0px 13px;
   padding-top: 2px;
 }
 
 #clock {
-  padding: 0px 16px;
+  padding: 0px 13px;
 }
 
-#custom-notification {
+/* #custom-notification {
   padding-right: 12px;
   padding-left: 10px;
   padding-top: 2px;
 }
 #custom-notification.notification{
   padding-right: 10px;
-}
+} */
 
-#custom-power {
-  margin-right: 2px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 3px;
-  font-weight: normal;
+#custom-multimenu {
+  margin-right: 6px;
+  padding-left: 9px;
+  padding-right: 13px;
+  font-size: 20px;
 }
