@@ -1,16 +1,3 @@
-#!/usr/bin/env bash
-
-## Author : Aditya Shakya (adi1090x)
-## Github : @adi1090x
-#
-## Rofi   : Power Menu
-#
-## Available Styles
-#
-## style-1   style-2   style-3   style-4   style-5
-## style-6   style-7   style-8   style-9   style-10
-
-# Current Theme
 dir="$HOME/.config/rofi/power"
 theme='style'
 
@@ -70,17 +57,6 @@ run_cmd() {
 			mpc -q pause
 			amixer set Master mute
 			systemctl suspend
-		elif [[ $1 == '--logout' ]]; then
-			if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
-				openbox --exit
-			elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
-				bspc quit
-			elif [[ "$DESKTOP_SESSION" == 'i3' ]]; then
-				i3-msg exit
-			elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
-				qdbus org.kde.ksmserver /KSMServer logout 0 0 0
-			fi
-		fi
 	else
 		exit 0
 	fi
@@ -96,14 +72,11 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
-		elif [[ -x '/usr/bin/i3lock' ]]; then
-			swaylock
-		fi
+		# swaylock
+		swaylock -C .cache/wal/swaylockconfig
         ;;
     $suspend)
-		run_cmd --suspend
+		systemctl suspend
         ;;
     $logout)
 		mmsg dispatch quit
